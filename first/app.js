@@ -8,6 +8,6 @@ const app = new Vue({
             "Cannot wait to get started",
             "Good Morning everyone"
         ],
-        bio: "Software Apprentice"
+        bio: "Excited frontend engineer"
     }
 })
