@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js" defer></script>
+    <script src="Tweet.js" defer></script>
     <script src="app.js" defer></script>
     <title>Vue Practice</title>
 </head>
@@ -22,12 +23,8 @@
                 <em>Bio: </em> {{bio}}
             </div>
         </div>
-        <div class="tweets" v-for="tweet in tweets">
-            <div class="tweet">
-                <h3>{{ username }}</h3>
-                <p>{{ tweet }}</p>
-            </div>
-
+        <div class="tweets">
+            <tweet v-for="tweet in tweets" v-bind:message='tweet' v-bind:author="username"></tweet>
         </div>
         <div class="settings">
             <h2>Settings</h2>
