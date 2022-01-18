@@ -17,11 +17,11 @@
         <div class="form-row">
           <div class="form-field">
             <label for="first-name">First Name</label>
-            <input type="text" id="first-name" />
+            <input type="text" id="first-name" v-model='firstName' />
           </div>
           <div class="form-field">
             <label for="last-name">Last Name</label>
-            <input type="text" id="last-name" />
+            <input type="text" id="last-name" v-model="lastName"/>
           </div>
         </div>
         <div class="form-row">
@@ -77,7 +77,7 @@
           <fieldset>
             <legend>Purchase Agreement</legend>
             <p>
-              I, {{firstName}} {{lastName}}, wish to buy {{ticketQuantity}} {{ticketType}} tickets. I understand
+              I, {{fullName}} , wish to buy {{ticketDescription}} tickets. I understand
               that all ticket sales are final.
             </p>
             <input type="checkbox" name="agreement" id="agree" />
