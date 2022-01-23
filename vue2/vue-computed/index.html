@@ -10,14 +10,11 @@
 
 <body>
     <div id="app">
-        <button v-on:click="increase(2)">Click Me</button>
-        <button v-on:click="counter++">Click Me</button>
-        <p> {{ counter }}</p>
-        <p v-on:mousemove="updateCoordinates">
-            Coordinates: {{ x }} / {{ y }}
-            <span v-on:mousemove.stop="">DEAD SPOT</span>
-        </p>
-        <input type="text" v-on:keyup.enter="alertMe">
+        <button v-on:click="counter++">Increase</button>
+        <button v-on:click="counter--">Decrease</button>
+        <button v-on:click="secondCounter++">Increase Second Counter</button>
+        <p> {{ counter }} | {{ secondCounter }}</p>
+        <p> {{ result() }} | {{ output }}</p>
     </div>
 
     <script src="https://unpkg.com/vue@2.6.14/dist/vue.js"></script>
