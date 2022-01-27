@@ -1,7 +1,8 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
-    <HelloWorld/>
+    <!-- <HelloWorld/> -->
+    <h1>Hello World</h1>
   </div>
 </template>
 
@@ -9,10 +10,10 @@
 import HelloWorld from './components/HelloWorld'
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+  // name: 'App',
+  // components: {
+  //   HelloWorld
+  // }
 }
 </script>
 
