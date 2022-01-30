@@ -1,8 +1,9 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <!-- <HelloWorld/> -->
-    <h1>Hello World</h1>
+    <!-- <img src="./assets/logo.png">
+    <HelloWorld/> 
+    <h1>Server Status: {{status}}</h1> -->
+    <app-server-status></app-server-status>
   </div>
 </template>
 
@@ -14,6 +15,12 @@ export default {
   // components: {
   //   HelloWorld
   // }
+
+  data: function() {
+    return {
+      status: 'Critical',
+    }
+  }
 }
 </script>
 
